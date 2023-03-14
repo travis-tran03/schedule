@@ -1,0 +1,211 @@
+
+body {
+	background-color: lavenderblush;
+}
+
+#calContainer {
+	background-image: linear-gradient( 180deg, #ffd3da 35%,  #ffc1ca 85%, #ffb6c1 100%);
+	width: 100%;
+	height: 220vh;
+	font-family: "TISA", monospace;
+	border: 2px black solid;
+	border-top-right-radius: 17vh;
+	border-bottom-left-radius: 17vh;
+}
+
+#header{
+	display: block;
+	padding-top: 3vh;
+	text-align: center;
+	font-size: 4.2vw;
+	background-image: linear-gradient( 180deg, #fff0f3 45%,  #ffd3da 100%);
+	height: 40vh;
+	border: 2px black solid;
+	border-bottom-left-radius: 17vh;
+	border-top-right-radius: 17vh;
+	background-clip: border-box;
+}
+
+#header #year {
+	margin-bottom: 2vh;
+}
+
+#header #month {
+	margin-top: 2vh;
+}
+
+#weekdays {
+	display: flex;
+	margin-top: 10vh;
+	margin-left: 8.5vw;
+	font-size: 1.5vw;
+	color: mediumpurple;
+	-webkit-text-stroke: 0.7px black;
+}
+
+#weekdays div {
+	display: inline-block;'
+	width: 100px;
+	padding: 10px;
+}
+
+#calendar {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 5.3vw;
+}
+
+#buttonContainer{
+	display: flex;
+	width: 100%;
+	height: 10vh;
+	align-items: center;
+}
+
+#buttonContainer #back{
+	margin: 3vw;
+	padding: 1vw;
+	margin-right: 40vw;
+	border: 2px red solid;
+	border-radius: 25%;
+	background-image: linear-gradient( 180deg, #fff0f3 45%,  #ffd3da 100%);
+}
+
+#buttonContainer #back:hover{
+	cursor: pointer;
+	background-color: #e8faed;
+}
+
+#buttonContainer #next{
+	margin: 3vw;
+	padding: 1vw;
+	margin-left: 43vw;
+	border: 2px red solid;
+	border-radius: 25%;
+	background-image: linear-gradient( 180deg, #fff0f3 45%,  #ffd3da 100%);
+	
+}
+
+#buttonContainer #next:hover{
+	cursor: pointer;
+	background-color: #e8faed;
+}
+
+.day {
+	width: 12vw;
+	padding: 1vh;
+	height: 12vw;
+	cursor: pointer;
+	box-sizing: border-box;
+	background-color: blueviolet;
+	margin: 5px;
+	box-shadow: 0px 0px 3px #CBD4C2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.day:hover {
+  background-color: #e8faed;
+}
+
+.day + #currentDay {
+  background-color:#e8f4fa;
+}
+
+.blank {
+	width: 12vw;
+	padding: 10px;
+	height: 12vw;
+	cursor: pointer;
+	box-sizing: border-box;
+	background-color: blueviolet;
+	margin: 5px;
+	box-shadow: 0px 0px 3px #CBD4C2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: transparent;
+}
+
+textarea {
+	margin-left: 10%;
+	margin-top: 5%;
+	width: 9vw;
+	height: 18vh;
+}
+
+.notes {
+	border: none;
+	background-color: blueviolet;
+	resize: none;
+	outline: none;
+}
+
+.notes:hover {
+	background-color: #e8faed;
+}
+
+.event {
+  font-size: 1.4vh;;
+  padding: 4px;
+  background-color: #58bae4;
+  color: white;
+  border-radius: 0.7vh;
+  height: 14vh;
+  overflow: hidden;
+  margin-top: 0.5vh;
+}
+
+.delete {
+	font-size: 1.4vh;
+	font-family: "Lucida Console", monospace;
+	width: 6vw;
+	height: 6vh;
+	background-color: lightgrey;
+	margin-top: 1vh;
+	margin-left: 2.4vw;
+	overflow: hidden;
+	border-color: grey;
+}
+
+.delete:hover{
+	cursor: pointer;
+	background-color: #e8faed;
+}
+
+.yes {
+	font-size: 1.4vh;
+	font-family: "Lucida Console", monospace;
+	width: 6vw;
+	height: 6vh;
+	background-color: lightgrey;
+	margin-top: 1vh;
+	margin-left: 2.4vw;
+	overflow: hidden;
+	border-color: grey;
+}
+
+.no {
+	font-size: 1.4vh;
+	font-family: "Lucida Console", monospace;
+	width: 6vw;
+	height: 6vh;
+	background-color: lightgrey;
+	margin-top: 1vh;
+	margin-left: 2.4vw;
+	overflow: hidden;
+	border-color: grey;
+}
+
+.yes:hover{
+	cursor: pointer;
+	background-color: #e8faed;
+}
+
+.no:hover{
+	cursor: pointer;
+	background-color: #e8faed;
+}
